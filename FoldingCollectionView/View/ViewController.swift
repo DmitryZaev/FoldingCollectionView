@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         view = mainView
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.async {
